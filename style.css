@@ -2,7 +2,9 @@
     font-family: Arial;
 
 }
-
+html{
+    font-size: 16px;
+}
 
 body{
     background-color: white;
@@ -24,19 +26,60 @@ main{
 #main-screen{
     height: 100%;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+}
+#group-vote-screen{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, 0.151);
+}
+#group-vote-screen h1{
+    margin: 0;
+    margin-left: 20px;
+}
+.title-wrapper{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.title-group{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     gap: 10px;
+}
+.title-group h1{
+    margin: 0;
+   
+}
+.title-group input{
+    height: 40px;
+    border-radius: 10px;
+
 }
 
 
 
 img{
-    height: 50%;
+    height: 70%;
     margin: 0;
     padding: 0;
+
+    
 }
 .button-box{
     height: 30%;
@@ -45,7 +88,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 .button-box button{
     height: 60px;
@@ -60,5 +103,5 @@ img{
 }
 #main-screen h1{
     margin: 0;
-    color: white;
+    color: black;
 }
